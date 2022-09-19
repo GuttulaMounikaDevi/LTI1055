@@ -1,0 +1,24 @@
+<html>
+<body>
+<script>
+names=new Array();
+num=new Array();
+salary=new Array();
+n = prompt("Enter total number of employees.",'1');
+for(i=0;i<n;i++)
+{
+	names[i]=prompt("Enter employee name:","Vikram");
+	num[i]=prompt("Enter employee number:","000");
+	salary[i]=prompt("Enter employee salary:","1000");
+}
+document.write("Employee Details are:");
+document.write("<table border=1>");
+document.write("<tr><th>Employee name</th><th>Employee Number</th><th>Employee salary</th><tr>");	
+for(x=0;x<n;x++)
+{         
+	document.write("<tr><td>"+names[x]+"</td><td>"+num[x]+"</td><td>"+salary[x]+"</td></tr>");
+}
+document.write("</table>");
+</script>
+</body>
+</html>

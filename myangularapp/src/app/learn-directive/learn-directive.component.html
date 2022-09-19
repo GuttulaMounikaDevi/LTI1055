@@ -1,0 +1,35 @@
+
+
+<div *ngIf="true;else id_selector">
+      This text will be hidden
+      <h1>
+    this text is coming from    Structural Directive 
+        If Part:
+      </h1>
+    </div> 
+    <ng-template #id_selector>
+    
+      This text will be displayed when value is false
+    
+      <h1>
+    
+       this text is coming from  Structural Directive
+    
+        Else Part :
+    
+      </h1>
+    
+    </ng-template>
+    <div [ngSwitch]="number">
+
+        <div *ngSwitchCase="'one'">One is Displayed</div>  
+ 
+        <div *ngSwitchCase="'two'">Two is Displayed</div>
+ 
+        <div *ngSwitchCase="'three'">Three is displayed</div>
+ 
+        <div *ngSwitchDefault>Default Option is Displayed</div>  
+ 
+        
+ 
+      </div>

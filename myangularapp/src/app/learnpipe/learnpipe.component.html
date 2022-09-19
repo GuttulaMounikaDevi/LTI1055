@@ -1,0 +1,21 @@
+<p>Pipe Study</p>
+<table>
+    <tr>  
+        <th>Code</th>  
+        <th>Name</th>  
+        <th>Gender</th>  
+        <th>Annual Salary</th>  
+        <th>Annual Salary INDIAN</th>  
+        <th>Date of Birth</th>  
+        <th>Date in dd/MM/yyyy</th>  
+    </tr>  
+
+<tr *ngFor="let e of employees">
+    <td>{{e.code}}</td>
+    <td>{{e.name|uppercase}}</td>
+    <td>{{e.gender}}</td>
+    <td>{{e.annualSalary|currency: "USD"}}</td>
+    <td>{{e.annualSalary|currency: "INR"}}</td>
+    <td>{{e.dateOfBirth|date:'short'}}</td>
+    <td>{{e.dateOfBirth|date:'dd/MM/yyyy'}}</td>
+</tr>

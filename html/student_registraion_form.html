@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Student Registration Form</title>
+
+    </head>
+    <body>
+        <h1 align="center">Student Registration Form</h1>
+        <form>
+            <pre>
+                <label for="Name">Student name:</label>
+            <input type="text" name="sname" id="name"  pattern="[A-Z,a-z, ]{1,15}" required>
+            <label for="Email">Emil_id:</label>
+            <input type="email" name="email" required >
+            <label for="password">password:</label>
+            <input type="password" name="password"id=password pattern="[a-z,0-9,A-Z,@]{1,15}" required>
+            <label for="phone_number">Phn_number</label>
+            <input type="tel" name="phone_number"id=phn_number  required>
+            <label for="DOB">DOB</label>
+            <input type="date" name="DOB" id="DOB" required>
+            Gender:<input type="radio" name="Gender">Male
+                   <input type="radio" name="Gender">Female
+            Adress:<textarea></textarea>
+            Course:<select>
+                <option>JAVA</option>
+                <option>C</option>
+                <option>C++</option>
+                <option>HTML</option>
+
+            </select>
+
+            <input type="submit" value="submit" >      
+            </pre>
+            
+        </form>
+    </body>
+</html>

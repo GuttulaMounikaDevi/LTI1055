@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script>
+            var i=0,a;
+            a=new Array();
+            a[0]="butterfly.jpg";
+            a[1]="teddybear.jpg";
+            function starts()
+            {
+                document.img1.src=a[i];
+                i++;
+                id=setTimeout("starts()",1000);
+            if(i==2)
+            {
+                i=0;
+            }
+
+            }
+            function stop()
+            {
+                clearTimeout(id);
+
+            }
+        </script>
+    </head>
+    <body>
+        
+            <img src="mario.jpg" height=300 width=300 name=img1 >
+            <input type="button" name=b1 value="start" onclick="starts()">
+            <input type="button" name=b2 value="stop" onclick="stop()">
+
+      
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<pre>
+<form autocomplete="off" >
+<label for=user>username:</label> 
+<input type="text" name="username" id="user" pattern="[a-z,0-9, ]{1,15}" title="should contain onlylowercase alphabets">
+password:<input type="password" name="pass" placeholder="password">
+<hr color="red">      
+Gender:Male<input type="radio" name="r1" checked >
+       Female<input type="radio" name="r1">
+<fieldset>
+<legend>HObbies</legend>    
+        Cricket<input type="checkbox" name="c1">
+        Dancing<input type="checkbox" name="c1">
+        Reading books<input type="checkbox" name="c1" checked>
+        movies<input type="checkbox" name="c1">
+</fieldset>       
+Adress:<textarea> </textarea>
+email:<input type="email">
+phone_no:<input type="number" max="10">
+<input type="file">
+proficiency in: <select multiple>
+    <option>C</option>
+    <option>C++</option>
+    <option selected>JAVA</option>
+    <option>Oracle</option>
+ </select>       
+<input type="submit" value="click">
+</form>
+</pre>
+</html>
+<!--methods are 1.get 2.post 
+get is limited,not secure
+post is unlimited, secured
+for example:-if we are giving info through url if we give get details will be in url but 
+in post details will be in url but password in form of stars-->
+
+<!--autocomplete is  by default on the use of autocomplete is the previous details which we entered is shown if we give this as off it will not show
+for example:-we fill the form for 1st time and we click on submit then again we are filling the form again the it will show our previous entered details-->
